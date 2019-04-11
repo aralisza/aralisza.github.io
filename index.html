@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         html {
-            background-color: #D57C90;
             color: #FFFFFF;
             margin: 0;
             height: 100%;
@@ -21,6 +20,7 @@
         }
 
         body {
+            background-color: #D57C90;
             flex: 1;
             display: flex;
             justify-content: center;
@@ -117,6 +117,26 @@
             </div>
         </main>
     </div>
+    <script type="text/javascript">
+        (function a() {
+            var colors = [
+                "#EDBA6E",
+                "#E78772",
+                "#D57C90",
+                "#E89FBD",
+                "#E07F7F",
+                "#B78ECB",
+                "#6ACABE",
+                "#81CC9A",
+                "#77B7CB",
+                "#90A8CB",
+                "#434343",
+            ];
+
+            var bgColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = bgColor;
+        })()
+    </script>
 </body>
 
 </html>
